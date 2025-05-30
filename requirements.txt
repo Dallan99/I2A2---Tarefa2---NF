@@ -1,0 +1,8 @@
+openai
+langchain
+langchain-experimental
+pandas
+streamlit
+tabulate
+langchain-community
+langchain-openai
