@@ -7,7 +7,7 @@ from langchain.schema import HumanMessage
 
 load_dotenv()
 
-def criar_agente(caminho_csv: str):
+def criar_agente(caminho_csv: str, api_key: str):
     # 1) Carrega o arquivo (CSV ou Excel)
     if caminho_csv.lower().endswith(('.xls', '.xlsx')):
         df = pd.read_excel(caminho_csv, engine="xlrd")
@@ -27,9 +27,9 @@ def criar_agente(caminho_csv: str):
     # 2) Cria o LLM
     llm = ChatOpenAI(
         model_name="gpt-3.5-turbo",
-        temperature=0,
-        openai_api_key=os.getenv("OPENAI_API_KEY")
-    )
+        temperature=0.3,
+        openai_api_key=api_key
+)
 
     def run_query(pergunta: str) -> str:
         # ---- passo 1: gerar código pandas (com as colunas explícitas) ----
