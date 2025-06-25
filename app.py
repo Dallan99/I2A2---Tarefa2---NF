@@ -20,7 +20,8 @@ if not api_key:
 
 # --- 2) Configura a página ---
 st.set_page_config(page_title="Agente NF - Janeiro/2024", layout="wide")
-st.title("🤖 Agente de Notas Fiscais - Janeiro/2024")
+st.image("images/logo.jpg", width=100)  
+st.title("Agente de Notas Fiscais - Janeiro/2024")
 
 st.markdown("""
 Faça perguntas como:
