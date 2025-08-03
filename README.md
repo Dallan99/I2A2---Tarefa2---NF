@@ -1,5 +1,7 @@
 # BrainAI – Agente de Notas Fiscais (Janeiro/2024)
 
+https://tarefa2nf.streamlit.app
+
 Este repositório contém um **agente inteligente** que responde, via navegador, a perguntas em linguagem natural sobre notas fiscais emitidas em janeiro de 2024. O projeto combina:
 
 - **Pandas** para manipulação de DataFrames  
